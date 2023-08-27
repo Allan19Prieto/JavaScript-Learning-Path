@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Minimal JS Front-End App Example</title>
+    <script src="src/c/initialize.js"></script>
+    <script src="src/m/Book.js"></script>
+    <script src="src/v/deleteBook.js"></script>
+    <script>
+        window.addEventListener("load",
+            pl.v.deleteBook.setupUserInterface);
+    </script>
+</head>
+<body>
+    <main>
+        <form id="Book">
+            <div>
+                <label>Select book: <select name="selectBook">
+                        <option value="">---</option>
+                    </select>
+                </label>
+            </div>
+            <div><button type="button" name="commit">Delete</button></div>
+        </form>
+    </main>
+</body>
+</html>

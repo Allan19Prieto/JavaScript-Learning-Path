@@ -6,6 +6,7 @@ function Book( slots ) {
 
 Book.instances = {};
 
+// creating a new book instance
 Book.add = function ( slots ) {
     const book = new Book( slots );
     // add book to the collection of Book.instances
@@ -13,6 +14,7 @@ Book.add = function ( slots ) {
     console.log(`Book ${slots.isbn} create!`);
 };
 
+// Converting in a object
 Book.convertRec2Obj = function (bookRow) {
     const book = new Book( bookRow );
     return book;
@@ -28,8 +30,8 @@ Book.retrieveAll = function () {
         alert("Error when reading from Local Storage\n" + e);
     }
     if ( booksString ) {
-        const books = JSON.parse ( booksString );
-        const keys = Object.keys ( books );
+        const books = JSON.parse( booksString );
+        const keys = Object.keys( books );
         console.log( `${ keys.length } books loaded` );
         for ( const key of keys ) {
             Book.instances[key] = Book.convertRec2Obj( books[key]);
@@ -39,7 +41,7 @@ Book.retrieveAll = function () {
 
 Book.update = function ( slots ) {
     const book = Book.instances[slots.isbn];
-    year = parseInt ( slots. year );
+    year = parseInt( slots.year );
     if ( book.title != slots.title ) book.title = slots.title;
     if ( book.year != year ) book.year = year;
     console.log(`Book ${slots.isbn} modified!`);
@@ -57,7 +59,7 @@ Book.destroy = function (isbn) {
 Book.saveAll = function () {
     var error = false;
     try {
-        const booksString = JSON.parse(Book.instances);
+        const booksString = JSON.stringify(Book.instances);
         localStorage["books"] = booksString;
     } catch (e) {
         alert("Error when writing to Local Store\n" + e);

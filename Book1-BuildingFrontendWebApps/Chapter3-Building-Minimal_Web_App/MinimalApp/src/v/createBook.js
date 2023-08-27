@@ -12,6 +12,7 @@ pl.v.createBook = {
     });
   },
 
+  // Save the data
   handleSaveButtonClickEvent: function () {
     const formEl = document.forms["Book"];
     const slots = { isbn: formEl.isbn.value, 
