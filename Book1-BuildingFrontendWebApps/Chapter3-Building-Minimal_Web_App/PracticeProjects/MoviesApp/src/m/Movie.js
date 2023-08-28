@@ -1,4 +1,4 @@
-function Movie(slots) {
+function Movie( slots ) {
     this.movieId = slots.movieId;
     this.title = slots.title;
     this.releaseDate = slots.releaseDate;
@@ -32,8 +32,8 @@ Movie.retrieveAll = function() {
 
     if (movieString) {
         const movies = JSON.parse(movieString);
-        const Keys = Object.Keys(movies);
-        console.log(`${keys.length} Movies loged`);
+        const Keys = Object.keys(movies);
+        console.log(`${Keys.length} Movies loged`);
         for ( const Key of Keys ){
             Movie.instances[Key] = Movie.convertRec2Obj( movies[Key]);
         }

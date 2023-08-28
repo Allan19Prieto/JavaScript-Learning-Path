@@ -21,7 +21,7 @@ pl.v.createMovie = {
         const slots = { movieId: formEl.movieId.value, title: formEl.title.value,
                         releaseData: formEl.releaseData.value };
                         
-        Movie.add();
+        Movie.add(slots);
         formEl.reset();
     }
 };
