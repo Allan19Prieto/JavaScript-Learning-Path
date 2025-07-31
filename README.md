@@ -8,6 +8,13 @@ Here, I'm documenting everything I learn while mastering JavaScript — from bas
 
 This repository is organized by topics and progress level:
 
+/basics/ → Syntax, variables, data types, functions, etc.
+/control-flow/ → if/else, switch, loops
+/arrays-objects/ → Arrays, objects, array methods
+/dom/ → DOM manipulation and events
+/asynchronous-js/ → setTimeout, promises, async/await, fetch
+/projects/ → Mini apps and practice projects
+/notes/ → Personal notes and summaries
 
 ## 🧠 Goals
 
