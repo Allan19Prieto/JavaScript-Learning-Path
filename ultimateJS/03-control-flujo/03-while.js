@@ -1,11 +1,11 @@
 // Cuales son los números pares
+
 let i = 0;
-while (i < 10) {
-    if ( i % 2 == 0) {
-        let edad = 25;
-        console.log('Número par', i)
-        i++;
+while (i <= 10) {
+    if (i%2 == 0){
+        console.log('Número par: ' + i);
     }
+    i++;
 }
 
-console.log('Fin del ciclo while');
+console.log('Fin del ciclo while para encontrar pares');
