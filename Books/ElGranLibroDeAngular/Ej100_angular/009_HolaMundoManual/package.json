@@ -1,0 +1,24 @@
+{
+    "name" : "0L1_HolaMundo_Manual",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+        "tsc": "tsc",
+        "tsc:w": "tsc -w",
+    "lite": "lite-server"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "angular2": "2.0.0-beta.14",
+        "es6-shim": "^0.35.0",
+        "systemjs": "0.19.25",
+        "reflect-metadata": "^0.1.2",
+        "zone.js": "0.6.6",
+        "rxjs": "5.0.0-beta.2"
+    },
+    "devDependencies": {
+        "typescript": "^1.8.9",
+    "concurrently": "^2.2.0",
+    "lite-server": "^1.2.1"
+    }
+}
