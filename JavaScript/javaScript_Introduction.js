@@ -67,3 +67,15 @@ let falso = false;
 let resultadoAnd = verdadero && falso; //false
 let resultadoOr = verdadero || falso; //true
 let resultadoNot = !verdadero; //false */
+
+//Operador de asignación de concatenación,+=
+
+/* var longString = "";
+longString += "Once";
+longString += " upon";
+longString += " a";
+longString += " time";
+longString += "...";
+console.log(longString); // "Once upon a time..." */
+
+console.log("Allan" + 1);
