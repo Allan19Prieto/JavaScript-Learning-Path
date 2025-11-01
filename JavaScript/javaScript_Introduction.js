@@ -78,4 +78,69 @@ longString += " time";
 longString += "...";
 console.log(longString); // "Once upon a time..." */
 
-console.log("Allan" + 1);
+/* var edad = 10;
+if (edad >= 65) {
+    console.log("Obtienes tus ingresos de tu pensión");
+} else if (edad < 65 && edad >= 18){
+    console.log("Cada mes recibes un salario");
+} else if (edad < 18){
+    console.log("Recibes un subsidio");
+} else {
+    console.log("El valor de la variable edad no es numérico");
+} */
+
+/* var day = "sunday";
+switch(day){
+    case "monday":
+        console.log('Do something');
+        break;
+    case "tuesday":
+        console.log('Do something');
+        break;
+    case "wednesday":
+        console.log('Do something');
+        break;  
+    case "thursday":
+        console.log('Do something');
+        break;
+    case "friday":
+        console.log('Do something');
+        break;
+    case "saturday":
+        console.log('Do something');
+        break;
+    case "sunday":
+        console.log('Do something');
+        break; 
+    default:
+        console.log('That is not a day'); 
+} */
+
+/* // Tarea1
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+    if (i == 5){
+        console.log('counting completed!');
+    }
+}
+
+//Ma eficiente
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+console.log('counting completed!');
+
+//Tarea 2
+let count = 1;
+while (count <= 5) {
+    console.log(count);
+    count++;    
+    if (count > 5) {
+        console.log('counting completed!');
+    }
+} */
+
+
+
+
+
