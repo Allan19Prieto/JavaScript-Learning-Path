@@ -35,3 +35,18 @@ favCar.convertible = false;
 
 // Error prevention
 
+function addTwoNums(a,b){
+    try {
+        if(typeof a !== 'number'){
+            throw "First argument is not a number";
+        }else if (typeof b !== 'number'){
+            throw "Second argument is not a number";
+        }else{
+            console.log(a+b);
+        }
+    } catch (error) {
+        console.log("Error!", error);
+    }
+}
+
+addTwoNums(3,"4");
