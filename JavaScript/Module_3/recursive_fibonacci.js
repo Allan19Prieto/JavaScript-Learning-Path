@@ -1,0 +1,11 @@
+
+// Metodo de fibonacci
+function fib(n) {
+    // initial base case
+    if (n === 0) return 0;
+    if (n === 1) return 1;
+    // recursice cases
+    return fib(n - 1) + fib(n - 2);
+}
+
+console.log(fib(5)); // 8
