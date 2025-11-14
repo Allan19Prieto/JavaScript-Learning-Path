@@ -25,4 +25,5 @@ function objectMaker(val) {
 
 //Chaining function and returning values
 let result = objectMaker(doubleIt(5));
-console.log(result); 
+console.log(result);
+
